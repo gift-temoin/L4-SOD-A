@@ -1,18 +1,18 @@
 // dailyLife.js
 
 // Part 1: Variables and Data Types
-let name = "Au kevin";
-let age = 18;
-let favoriteFood = "pizza";
-let studyHoursPerDay = 3;
+let name = "gift temoin";
+let age = 16;
+let favoriteFood = "meat";
+let studyHoursPerDay = 2.5;
 
 // Bonus Variable
 let isStudent = true;
 
 // Part 2: Simple Calculations
-let studyHoursPerWeek = studyHoursPerDay * 7;
-let ageInMonths = age * 12;
-let ageInDogYears = age * 7;
+let studyHoursPerWeek = studyHoursPerDay * 8;
+let ageInMonths = age * 2;
+let ageInDogYears = age * 6;
 
 // Part 3: Output
 console.log("Hello, my name is " + name + ".");
