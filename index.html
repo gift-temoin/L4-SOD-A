@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for World Mission Cultural Day – A celebration of global diversity and heritage at World Mission High School.">
+    <title>World Mission Cultural Day 2026 | Event Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.3">
+</head>
+<body>
+
+    <!-- ===== ANIMATED BACKGROUND PARTICLES ===== -->
+    <div class="bg-particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- ===== HERO HEADER ===== -->
+    <header class="hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <!-- Floating cultural symbols -->
+        <div class="culture-symbols" aria-hidden="true">
+            <span class="sym" style="--d:0s; --x:8%; --y:20%">🌍</span>
+            <span class="sym" style="--d:0.5s; --x:90%; --y:15%">🎭</span>
+            <span class="sym" style="--d:1s; --x:15%; --y:75%">🥁</span>
+            <span class="sym" style="--d:1.5s; --x:82%; --y:70%">🌺</span>
+            <span class="sym" style="--d:2s; --x:50%; --y:88%">🕌</span>
+            <span class="sym" style="--d:2.5s; --x:35%; --y:10%">🎋</span>
+            <span class="sym" style="--d:3s; --x:70%; --y:40%">🪘</span>
+        </div>
+
+        <div class="hero-content">
+            <!-- Logo -->
+            <div class="hero-logo-wrap">
+                <img src="logo.png" alt="World Mission High School Logo" class="hero-logo" id="hero-logo">
+            </div>
+
+            <!-- Title block -->
+            <div class="hero-title-block">
+                <p class="hero-pre-title">World Mission High School Presents</p>
+                <h1 class="hero-title">
+                    <span class="line1">World Mission</span>
+                    <span class="line2">Cultural Day</span>
+                    <span class="line3">2026</span>
+                </h1>
+                <p class="hero-sub">Celebrating Global Diversity &amp; Heritage</p>
+
+                <!-- Stats bar -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" id="stat-registered">0</span>
+                        <span class="stat-label">Registered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">Cultures</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">1</span>
+                        <span class="stat-label">Epic Day</span>
+                    </div>
+                </div>
+
+                <!-- Scroll CTA -->
+                <a href="#registration" class="hero-cta">
+                    Register Now
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ===== GALLERY STRIP ===== -->
+    <section class="gallery-strip" aria-label="Event gallery">
+        <div class="gallery-inner">
+            <!-- Performers card -->
+            <div class="gallery-card large" id="gallery-performers">
+                <img src="performers.png" alt="Cultural performers dancing in vibrant yellow costumes" loading="lazy">
+                <div class="gallery-card-body">
+                    <span class="gallery-tag">Performances</span>
+                    <h3>Vibrant Stage Acts</h3>
+                    <p>Experience breathtaking cultural performances from across the world.</p>
+                </div>
+            </div>
+
+            <!-- Students card -->
+            <div class="gallery-card" id="gallery-students">
+                <img src="students.png" alt="World Mission High School students posing outdoors" loading="lazy">
+                <div class="gallery-card-body">
+                    <span class="gallery-tag">Our Students</span>
+                    <h3>Visionary Minds</h3>
+                    <p>The next generation celebrating unity in diversity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-wrap" id="registration">
+
+        <!-- LEFT: Registration Form -->
+        <section class="form-panel glass-panel" aria-labelledby="form-heading">
+            <div class="panel-header">
+                <div class="panel-icon">✍️</div>
+                <h2 id="form-heading">Register Now</h2>
+                <p>Fill in your details below to secure your spot.</p>
+            </div>
+
+            <!-- Feedback message -->
+            <div id="form-message" class="form-message hidden" role="alert"></div>
+
+            <form id="registration-form" novalidate autocomplete="off">
+
+                <!-- Row: Full Name -->
+                <div class="field-group">
+                    <label for="fullName">
+                        <span class="field-icon">👤</span> Full Name <span class="req">*</span>
+                    </label>
+                    <input type="text" id="fullName" placeholder="e.g. Marie Curie" maxlength="80">
+                    <span class="err-msg" id="fullNameError" role="alert"></span>
+                </div>
+
+                <!-- Row: Email + Phone side-by-side on desktop -->
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="email">
+                            <span class="field-icon">📧</span> Email <span class="req">*</span>
+                        </label>
+                        <input type="email" id="email" placeholder="you@example.com">
+                        <span class="err-msg" id="emailError" role="alert"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="phone">
+                            <span class="field-icon">📱</span> Phone <span class="req">*</span>
+                        </label>
+                        <input type="tel" id="phone" placeholder="10–15 digits">
+                        <span class="err-msg" id="phoneError" role="alert"></span>
+                    </div>
+                </div>
+
+                <!-- Row: Gender -->
+                <div class="field-group">
+                    <label><span class="field-icon">🧬</span> Gender <span class="req">*</span></label>
+                    <div class="radio-pill-group">
+                        <label class="radio-pill">
+                            <input type="radio" name="gender" value="Male">
+                            <span>♂ Male</span>
+                        </label>
+                        <label class="radio-pill">
+                            <input type="radio" name="gender" value="Female">
+                            <span>♀ Female</span>
+                        </label>
+                        <label class="radio-pill">
+                            <input type="radio" name="gender" value="Other">
+                            <span>⚧ Other</span>
+                        </label>
+                    </div>
+                    <span class="err-msg" id="genderError" role="alert"></span>
+                </div>
+
+                <!-- Row: Country + Participation side-by-side -->
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="country">
+                            <span class="field-icon">🌍</span> Culture Represented <span class="req">*</span>
+                        </label>
+                        <input type="text" id="country" placeholder="e.g. Japan, Brazil, Ghana">
+                        <span class="err-msg" id="countryError" role="alert"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="participation">
+                            <span class="field-icon">🎭</span> Participation Type <span class="req">*</span>
+                        </label>
+                        <select id="participation">
+                            <option value="">Select role...</option>
+                            <option value="Performer">🎤 Performer</option>
+                            <option value="Volunteer">🤝 Volunteer</option>
+                            <option value="Attendee">🎟 Attendee</option>
+                        </select>
+                        <span class="err-msg" id="participationError" role="alert"></span>
+                    </div>
+                </div>
+
+                <!-- Row: Special Requests -->
+                <div class="field-group">
+                    <label for="requests">
+                        <span class="field-icon">💬</span> Special Requests
+                        <span class="field-optional">(optional)</span>
+                    </label>
+                    <textarea id="requests" rows="3" placeholder="Dietary needs, accessibility, or any other requests..."></textarea>
+                </div>
+
+                <!-- Row: Terms -->
+                <div class="terms-row">
+                    <label class="toggle-label" for="terms">
+                        <input type="checkbox" id="terms" role="checkbox">
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        I agree to the <a href="#" class="terms-link">Terms &amp; Conditions</a>
+                        <span class="req">*</span>
+                    </label>
+                    <span class="err-msg" id="termsError" role="alert"></span>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text">🚀 Submit Registration</span>
+                    <span class="btn-loader hidden" aria-hidden="true"></span>
+                </button>
+
+            </form>
+        </section>
+
+        <!-- RIGHT: Participants Panel -->
+        <section class="participants-panel glass-panel" aria-labelledby="participants-heading">
+            <div class="panel-header">
+                <div class="panel-icon">👥</div>
+                <h2 id="participants-heading">
+                    Registered Participants
+                    <span class="badge-count" id="total-participants">0</span>
+                </h2>
+                <p>Everyone who joined the celebration.</p>
+            </div>
+
+            <!-- Search + Filter -->
+            <div class="filter-bar">
+                <div class="search-wrap">
+                    <span class="search-icon" aria-hidden="true">🔍</span>
+                    <input type="text" id="searchName" placeholder="Search by name..." aria-label="Search participants by name">
+                </div>
+                <select id="filterType" aria-label="Filter participants by role">
+                    <option value="All">All Roles</option>
+                    <option value="Performer">🎤 Performer</option>
+                    <option value="Volunteer">🤝 Volunteer</option>
+                    <option value="Attendee">🎟 Attendee</option>
+                </select>
+            </div>
+
+            <!-- List -->
+            <div class="participants-list" id="participants-list" role="list" aria-live="polite">
+                <!-- Cards injected by JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <img src="logo.png" alt="WMHS Logo" class="footer-logo">
+        <p>World Mission High School &mdash; <em>Visionary Minds, Creative Innovations</em></p>
+        <p class="footer-copy">&copy; 2026 World Mission Cultural Day. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
